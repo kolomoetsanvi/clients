@@ -1,0 +1,89 @@
+﻿ *{
+    box-sizing: border-box;
+  }
+
+body {
+  /* фон страниц*/
+   background-color: #F0F1F2;
+   font-size: 1.4em;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+  }
+
+header{
+display: flex;
+flex-direction: row;
+background-color: #CBDAEC;
+min-height: 40px;
+flex: 0 0;
+}
+
+
+
+#Top{
+background-color: #66A1D2;
+margin-top: 5px;
+min-height: 35px;
+}
+
+#topText {
+	margin-left: 80px;
+	margin-top: 10px;
+	font-family: Courier, "Times New Roman", Arial;
+    font-size: 20pt;
+	line-height: 30px;
+	font-weight: bold;
+	color: white;
+	text-shadow:
+			-1px -1px 0 #000,
+			0px  -1px 0 #000,
+			-1px  1px 0 #000,
+			0px   1px 0 red;
+}
+
+
+footer {
+flex-direction: row;
+padding-top: 1em;
+flex: 0 0 5em;
+}
+
+
+main hr{
+	color: #FF9400;
+}
+
+ main{
+	border-top: 4px solid #FF9400;
+	background-color: white;
+	padding-top: 10px;
+	display: flex;
+  	flex-direction: row;
+    min-height: 100%;
+    flex: 1 1 auto;
+ }
+
+
+
+
+
+/* Правильные отступы на маленьких мониторах */
+
+@media screen and (max-device-width:480px) {
+	article {
+		margin:	1em 0;
+	}
+	main{
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+
+
+
+
